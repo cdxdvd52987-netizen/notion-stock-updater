@@ -1,0 +1,9 @@
+{
+  "name": "notion-stock-updater",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "node-fetch": "^3.3.2"
+  }
+}
