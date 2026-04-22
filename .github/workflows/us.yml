@@ -15,8 +15,8 @@ jobs:
           node-version: "20"
       - run: npm install
       - run: node update.js
-        env:
-          NOTION_TOKEN: $ secrets.NOTION_TOKEN 
+env:
+  NOTION_TOKEN: $ secrets.NOTION_TOKEN 
           TWELVE_DATA_KEY: $ secrets.TWELVE_DATA_KEY 
           DB_ID: $ secrets.US_DB_ID 
           MARKET: "US"
