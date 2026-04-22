@@ -2,6 +2,7 @@ import fetch from "node-fetch";
 import { Client } from "@notionhq/client";
 
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
+console.log("NOTION_TOKEN length:", (process.env.NOTION_TOKEN || "").length);
 const TWELVE_DATA_KEY = process.env.TWELVE_DATA_KEY;
 const DB_ID = process.env.DB_ID; // workflow 會塞 US_DB_ID 或 TW_DB_ID 進來
 const MARKET = process.env.MARKET; // US 或 TW
